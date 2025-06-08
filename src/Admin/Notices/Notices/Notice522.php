@@ -47,7 +47,7 @@ class Notice522 extends AbstractNotice {
 
 		$new_version = $this->backwpup->get_plugin_data( 'Version' );
 		// We will show this notice only with version 5.2.2 and all its sub-versions.
-		return version_compare( $new_version, '5.2.2', '>=' ) && version_compare( $new_version, '5.3', '<' );
+		return version_compare( $new_version, '5.2.2', '==' ) && version_compare( $new_version, '5.3', '<' );
 	}
 
 	/**
